@@ -12,6 +12,7 @@ export default ({ env }) => ({
       user: env('DB_USER'),
       password: env('DB_PASSWORD'),
       ssl: { rejectUnauthorized: false }, // Supabase requires SSL
+      family: 4,
     }),
     pool: { min: 2, max: 10 },
   },
